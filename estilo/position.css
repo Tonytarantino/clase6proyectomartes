@@ -1,0 +1,62 @@
+.contenedor1 {
+    height: 200px;
+    width: 500px;
+    border: 30px solid blue;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contenedor2 {
+    height: 200px;
+    width: 500px;
+    border: 30px solid cadetblue;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+.ejemplo {
+    border: 5px solid grey;
+    max-width: 50%; 
+    margin: 0 auto; 
+} 
+ 
+
+ .caja1 {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border: 10px solid crimson;
+    position: relative;
+    left: 30px;
+}
+
+.caja2 {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border: 10px solid salmon;
+    position: absolute;
+    top: 20px;
+}
+
+.caja3{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border: 10px solid palevioletred;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.caja4{
+    width: 200px;
+    height: 200px;
+     margin: 30px; 
+    border: 10px solid chocolate;
+    position: sticky;
+    top: 300px;
+}

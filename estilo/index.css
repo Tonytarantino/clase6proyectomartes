@@ -1,0 +1,144 @@
+* {
+    /* El asterisco es un selector "universal" */
+    margin: 0;
+}
+
+/* header y nav */
+nav {
+    background-color: grey;
+    height: 150px;
+
+    position: fixed;
+    /* dejamos fija la barra de navegación */
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    /* asegura que el nav quede en la capa superior y no se cubra con otros elementos */
+
+}
+
+
+.linkNav {
+    color: white;
+}
+
+.logoHerramienta {
+    font-size: 60px;
+    color: white;
+}
+
+/* portada */
+.portada {
+    background-image: url(../imagenes/portada.jpg);
+    /* la imagen de portada es un div con una imagen de fondo. Es importante darle altura */
+    background-size: cover;
+    /* con esto se asegura que la imagen no se deforme y quede correctamente ubicada dentro del div*/
+    height: 600px;
+
+}
+
+h1 {
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.iconoWP {
+    color: #6ff901;
+    font-size: 40px;
+    position: fixed;
+    /* se deja el icono de wp fijo */
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    /* se asegura que quede por arriba de todos los demás elementos */
+}
+
+/* introduccion al sitio */
+
+.intro {
+    height: 400px;
+    /* altura del div */
+
+}
+
+.divIntro {
+    text-align: center;
+}
+
+.imgDescripcion {
+    width: 500px;
+    height: 300px;
+    background-image: url(https://www.revista.ferrepat.com/wp-content/uploads/2015/12/ferreteria-sanchez-casado-productos.jpg);
+    background-size: cover;
+    
+}
+
+
+.subtitulo {
+    margin-bottom: 40px;
+}
+
+/* descripcion */
+
+.infoDescripcion {
+    width: 500px;
+}
+
+.textoDescripcion {
+    margin: 40px;
+}
+
+.imgDescripcion {
+    /* de la misma manera que se hizo la portada, se crea un div con tamaño y se le coloca una imagen de fondo */
+    background-image: url(https://www.revista.ferrepat.com/wp-content/uploads/2015/12/ferreteria-sanchez-casado-productos.jpg);
+    background-size: cover;
+
+}
+
+
+/* tarjetas */
+.tarjeta {
+    width: 200px;
+    height: 280px;
+    /*   border: 2px solid green; */
+    text-align: center;
+
+}
+
+.imgTarjeta {
+    max-width: 200px;
+    /* se le da un máximo de ancho a la imágen que va dentro de la tarjeta */
+}
+
+
+.pIntro {
+    margin-top: 10px;
+}
+
+footer {
+    height: 100px;
+    /* siempre se le da una altura al footer */
+    background-color: black;
+    margin: 0;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.iconoFooter {
+    color: white;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.info {
+    color: white;
+    text-align: center;
+}
+
+.infoFooter {
+    color: white;
+    margin: 20px;
+}

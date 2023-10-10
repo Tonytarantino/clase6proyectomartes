@@ -1,0 +1,167 @@
+.contenedorUno {
+    border: 10px solid orange;
+    display: flex;
+}
+
+.cajitaUno {
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    margin: 10px;
+}
+
+.contenedorDos {
+    border: 10px solid rgb(48, 48, 248);
+    display: flex;
+    justify-content: end;
+}
+
+.cajitaDos {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin: 10px;
+}
+
+.contenedorTres {
+    border: 10px solid greenyellow;
+    display: flex;
+    justify-content: center;
+}
+
+.cajitaTres {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    margin: 10px;
+}
+
+.contenedorCuatro {
+    border: 10px solid yellow;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cajitaCuatro {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    margin: 10px;
+}
+
+.contenedorCinco {
+    border: 10px solid palevioletred;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cajitaCinco {
+    width: 50px;
+    height: 50px;
+    background-color: palevioletred;
+    margin: 10px;
+}
+
+.contenedorSeis {
+    border: 10px solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cajitaSeis {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 10px;
+}
+
+.contenedorSiete {
+    height: 120px;
+    border: 5px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.cajitaSiete {
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    margin: 10px;
+}
+
+.contenedorOcho {
+    height: 120px;
+    border: 5px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.cajitaOcho {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    margin: 10px;
+}
+
+@media(max-width:768px){
+    .contenedorUno {
+        display: block; /* bloqueo la propiedad flex en la condicion de este tamaño de pantalla */
+    }
+    .cajitaUno{
+        margin: 0 auto; /* centro las cajitas */
+        margin-top: 5px; /* solo margen superior para separarlas */
+    }
+    .contenedorDos{
+        display: block;
+    }
+    .cajitaDos{
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    .contenedorTres{
+        display: block;
+    }
+    .cajitaTres{
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    .contenedorCuatro{
+        display: block;
+    }
+    .cajitaCuatro{
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    .contenedorCinco{
+        display: block;
+    }
+    .cajitaCinco{
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    .contenedorSeis{
+        display: block;
+    }
+    .cajitaSeis{
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    .contenedorSiete{
+        display: block;
+    }
+    .cajitaSiete{
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    .contenedorOcho{
+        display: block;
+    }
+    .cajitaOcho{
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    
+
+}
