@@ -2,24 +2,42 @@
     /* El asterisco es un selector "universal" */
     margin: 0;
 }
-
 /* header y nav */
 nav {
     background-color: grey;
-    height: 150px;
+    height: 80px;
 
-    position: fixed;
-    /* dejamos fija la barra de navegación */
+    position: fixed;  /* dejamos fija la barra de navegación */
     width: 100%;
     top: 0;
-    z-index: 1;
-    /* asegura que el nav quede en la capa superior y no se cubra con otros elementos */
+    z-index: 1; /* asegura que el nav quede en la capa superior y no se cubra con otros elementos */
 
+    display: flex; /* el nav es flexible y se centran los elementos */
+    justify-content: center; 
+    align-items: center;
+
+    box-shadow: 1px 8px 26px 0px rgba(0, 0, 0, 0.44);  /* una sobra inferior */
+    -webkit-box-shadow: 1px 8px 26px 0px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 1px 8px 26px 0px rgba(0, 0, 0, 0.44);
 }
 
+ul {
+    display: flex; /* lista flexible */
+    list-style: none; /* quita los puntos */
+}
+
+.itemNav {
+    margin: 10px; /* para separar los items entre si */
+}
 
 .linkNav {
     color: white;
+    text-decoration: none; /* quita el subrayado */
+}
+
+.contenedorLogo {
+    position: absolute; /* se elige dejar el logo del sitio bien hacia la izquierda del sitio */
+    left: 30px;
 }
 
 .logoHerramienta {
@@ -29,12 +47,15 @@ nav {
 
 /* portada */
 .portada {
-    background-image: url(../imagenes/portada.jpg);
-    /* la imagen de portada es un div con una imagen de fondo. Es importante darle altura */
-    background-size: cover;
-    /* con esto se asegura que la imagen no se deforme y quede correctamente ubicada dentro del div*/
-    height: 600px;
-
+    background-image: url(../imagenes/portada.jpg);  /* la imagen de portada es un div con una imagen de fondo. Es importante darle altura */
+    background-size: cover; /* con esto se asegura que la imagen no se deforme y quede correctamente ubicada dentro del div*/
+    margin-top: 80px; /* misma medida que la altura del margin */
+    height: 400px;
+  
+    display: flex; /* se logra centrar el titulo h1 en el medio del div */
+    justify-content: center;
+    align-items: center;
+   
 }
 
 h1 {
@@ -45,100 +66,142 @@ h1 {
 }
 
 .iconoWP {
-    color: #6ff901;
+    color:#6ff901;
     font-size: 40px;
-    position: fixed;
-    /* se deja el icono de wp fijo */
+    position: fixed; /* se deja el icono de wp fijo */
     bottom: 20px;
     right: 20px;
-    z-index: 1;
-    /* se asegura que quede por arriba de todos los demás elementos */
+    z-index: 1; /* se asegura que quede por arriba de todos los demás elementos */
 }
 
 /* introduccion al sitio */
 
-.intro {
-    height: 400px;
-    /* altura del div */
-
+.intro{
+    height: 400px; /* altura del div */
+    display: flex; /* para centrar elementos tanto vertical como horizontal */
+    justify-content: center;
+    align-items: center;
 }
 
-.divIntro {
+.divIntro{
     text-align: center;
 }
 
-.imgDescripcion {
-    width: 500px;
-    height: 300px;
-    background-image: url(https://www.revista.ferrepat.com/wp-content/uploads/2015/12/ferreteria-sanchez-casado-productos.jpg);
-    background-size: cover;
-    
-}
-
-
-.subtitulo {
+.subtitulo{
     margin-bottom: 40px;
 }
 
 /* descripcion */
-
-.infoDescripcion {
-    width: 500px;
+.descripcion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
 }
-
-.textoDescripcion {
+.infoDescripcion{
+    width: 500px; 
+}
+.textoDescripcion{
     margin: 40px;
 }
-
-.imgDescripcion {
-    /* de la misma manera que se hizo la portada, se crea un div con tamaño y se le coloca una imagen de fondo */
+.imgDescripcion{
+     /* de la misma manera que se hizo la portada, se crea un div con tamaño y se le coloca una imagen de fondo */
     background-image: url(https://www.revista.ferrepat.com/wp-content/uploads/2015/12/ferreteria-sanchez-casado-productos.jpg);
     background-size: cover;
-
+    width: 500px;
+    height: 300px;
 }
 
 
 /* tarjetas */
-.tarjeta {
+.tarjeta{
     width: 200px;
     height: 280px;
-    /*   border: 2px solid green; */
+  /*   border: 2px solid green; */
     text-align: center;
-
+    box-shadow: 10px 9px 26px -10px rgba(0,0,0,0.34);
+-webkit-box-shadow: 10px 9px 26px -10px rgba(0,0,0,0.34);
+-moz-box-shadow: 10px 9px 26px -10px rgba(0,0,0,0.34);
+margin: 30px;
 }
 
-.imgTarjeta {
-    max-width: 200px;
-    /* se le da un máximo de ancho a la imágen que va dentro de la tarjeta */
+.imgTarjeta{
+    max-width: 200px; /* se le da un máximo de ancho a la imágen que va dentro de la tarjeta */
 }
 
-
-.pIntro {
+.contenedorTarjetas{
+    display: flex;
+    justify-content: space-around; /* pone las tarjetas en horizontal y les da el mismo espacio entre todas */
+}
+.pIntro{
     margin-top: 10px;
 }
 
 footer {
-    height: 100px;
-    /* siempre se le da una altura al footer */
+    height: 100px; /* siempre se le da una altura al footer */
     background-color: black;
     margin: 0;
-
+    position: relative; /* para lograr que el renglon de copyright quede al final sel sitio */
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-.iconoFooter {
+.subFooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+.iconoFooter{
     color: white;
     font-size: 30px;
     margin: 5px;
 }
 
-.info {
+.info{
     color: white;
     text-align: center;
 }
 
-.infoFooter {
+.infoFooter{
     color: white;
     margin: 20px;
+}
+
+.copyright {
+    background-color: grey;
+    position: absolute; /* reacciona a la position del footer, y no al body */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media(max-width: 768px){
+    .contenedorTarjetas{
+        display: block;
+    }
+    .tarjeta{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .descripcion{
+        display: block;
+    }
+    .infoDescripcion{
+        max-width: 100%;
+    }
+    .imgDescripcion{
+        max-width: 100%;
+    }
+    .subFooter{
+        display: block;
+    }
+    .iconos {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    footer{
+        height: 150px;
+    }
 }
