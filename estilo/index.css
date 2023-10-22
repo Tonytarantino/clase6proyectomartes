@@ -2,41 +2,51 @@
     /* El asterisco es un selector "universal" */
     margin: 0;
 }
+
 /* header y nav */
 nav {
     background-color: grey;
     height: 80px;
 
-    position: fixed;  /* dejamos fija la barra de navegación */
+    position: fixed;
+    /* dejamos fija la barra de navegación */
     width: 100%;
     top: 0;
-    z-index: 1; /* asegura que el nav quede en la capa superior y no se cubra con otros elementos */
+    z-index: 1;
+    /* asegura que el nav quede en la capa superior y no se cubra con otros elementos */
 
-    display: flex; /* el nav es flexible y se centran los elementos */
-    justify-content: center; 
+    display: flex;
+    /* el nav es flexible y se centran los elementos */
+    justify-content: center;
     align-items: center;
 
-    box-shadow: 1px 8px 26px 0px rgba(0, 0, 0, 0.44);  /* una sobra inferior */
+    box-shadow: 1px 8px 26px 0px rgba(0, 0, 0, 0.44);
+    /* una sobra inferior */
     -webkit-box-shadow: 1px 8px 26px 0px rgba(0, 0, 0, 0.44);
     -moz-box-shadow: 1px 8px 26px 0px rgba(0, 0, 0, 0.44);
 }
 
 ul {
-    display: flex; /* lista flexible */
-    list-style: none; /* quita los puntos */
+    display: flex;
+    /* lista flexible */
+    list-style: none;
+    /* quita los puntos */
 }
 
 .itemNav {
-    margin: 10px; /* para separar los items entre si */
+    margin: 10px;
+    /* para separar los items entre si */
 }
 
 .linkNav {
     color: white;
-    text-decoration: none; /* quita el subrayado */
+    text-decoration: none;
+    /* quita el subrayado */
 }
 
 .contenedorLogo {
-    position: absolute; /* se elige dejar el logo del sitio bien hacia la izquierda del sitio */
+    position: absolute;
+    /* se elige dejar el logo del sitio bien hacia la izquierda del sitio */
     left: 30px;
 }
 
@@ -47,15 +57,19 @@ ul {
 
 /* portada */
 .portada {
-    background-image: url(../imagenes/portada.jpg);  /* la imagen de portada es un div con una imagen de fondo. Es importante darle altura */
-    background-size: cover; /* con esto se asegura que la imagen no se deforme y quede correctamente ubicada dentro del div*/
-    margin-top: 80px; /* misma medida que la altura del margin */
+    background-image: url(../imagenes/portada.jpg);
+    /* la imagen de portada es un div con una imagen de fondo. Es importante darle altura */
+    background-size: cover;
+    /* con esto se asegura que la imagen no se deforme y quede correctamente ubicada dentro del div*/
+    margin-top: 80px;
+    /* misma medida que la altura del margin */
     height: 400px;
-  
-    display: flex; /* se logra centrar el titulo h1 en el medio del div */
+
+    display: flex;
+    /* se logra centrar el titulo h1 en el medio del div */
     justify-content: center;
     align-items: center;
-   
+
 }
 
 h1 {
@@ -66,142 +80,280 @@ h1 {
 }
 
 .iconoWP {
-    color:#6ff901;
+    color: #6ff901;
     font-size: 40px;
-    position: fixed; /* se deja el icono de wp fijo */
+    position: fixed;
+    /* se deja el icono de wp fijo */
     bottom: 20px;
     right: 20px;
-    z-index: 1; /* se asegura que quede por arriba de todos los demás elementos */
+    z-index: 1;
+    /* se asegura que quede por arriba de todos los demás elementos */
 }
 
 /* introduccion al sitio */
 
-.intro{
-    height: 400px; /* altura del div */
-    display: flex; /* para centrar elementos tanto vertical como horizontal */
+.intro {
+    height: 400px;
+    /* altura del div */
+    display: flex;
+    /* para centrar elementos tanto vertical como horizontal */
     justify-content: center;
     align-items: center;
 }
 
-.divIntro{
+.divIntro {
     text-align: center;
 }
 
-.subtitulo{
+.subtitulo {
     margin-bottom: 40px;
 }
 
 /* descripcion */
-.descripcion{
+.descripcion {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 50px;
 }
-.infoDescripcion{
-    width: 500px; 
+
+.infoDescripcion {
+    width: 500px;
 }
-.textoDescripcion{
+
+.textoDescripcion {
     margin: 40px;
 }
-.imgDescripcion{
-     /* de la misma manera que se hizo la portada, se crea un div con tamaño y se le coloca una imagen de fondo */
+
+.imgDescripcion {
+    /* de la misma manera que se hizo la portada, se crea un div con tamaño y se le coloca una imagen de fondo */
     background-image: url(https://www.revista.ferrepat.com/wp-content/uploads/2015/12/ferreteria-sanchez-casado-productos.jpg);
     background-size: cover;
     width: 500px;
     height: 300px;
 }
 
+.galeria {
+    height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 3 / 3;
+    background-image: url(https://sumaqmercados.pe/wp-content/uploads/2023/03/sumaq-mercados-blog-que-es-una-ferreteria-1024x520.jpg);
+    background-size: cover;
+}
+
+.div2 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url(https://www.graciacomerc.com/media/Categorias/ferreteria.jpg);
+    background-size: cover;
+}
+
+.div3 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+}
+
+.div4 {
+    grid-area: 1 / 4 / 3 / 5;
+    background-image: url(https://deposeguro.com/wp-content/uploads/2019/05/almacen-para-ferreteria.jpg);
+    background-size: cover;
+}
+
+.div5 {
+    grid-area: 3 / 1 / 4 / 3;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShi3y4XrJUwOAsyMhufaXp7h-P7P-XFml2YBB2_TpIMlztPLiU8h2HXzC-2BvKwEWINmw&usqp=CAU);
+    background-size: cover;
+}
+
+.div6 {
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: grey;
+    color: white;
+}
+
+.div7 {
+    grid-area: 4 / 2 / 5 / 3;
+    background-image: url(https://www.ferreteriavillamor.com/uploads/nJnx5f26/737x0_652x0/hombre-con-herramientas.jpg);
+    background-size: cover;
+}
+
+.div8 {
+    grid-area: 3 / 3 / 5 / 5;
+    background-image: url(https://www.exdal.es/wp-content/uploads/2022/06/Imagen2.jpg);
+    background-size: cover;
+}
+
 
 /* tarjetas */
-.tarjeta{
+.tarjeta {
     width: 200px;
     height: 280px;
-  /*   border: 2px solid green; */
+    /*   border: 2px solid green; */
     text-align: center;
-    box-shadow: 10px 9px 26px -10px rgba(0,0,0,0.34);
--webkit-box-shadow: 10px 9px 26px -10px rgba(0,0,0,0.34);
--moz-box-shadow: 10px 9px 26px -10px rgba(0,0,0,0.34);
-margin: 30px;
+    box-shadow: 10px 9px 26px -10px rgba(0, 0, 0, 0.34);
+    -webkit-box-shadow: 10px 9px 26px -10px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 10px 9px 26px -10px rgba(0, 0, 0, 0.34);
+    margin: 30px;
 }
 
-.imgTarjeta{
-    max-width: 200px; /* se le da un máximo de ancho a la imágen que va dentro de la tarjeta */
+.imgTarjeta {
+    max-width: 200px;
+    /* se le da un máximo de ancho a la imágen que va dentro de la tarjeta */
 }
 
-.contenedorTarjetas{
+.contenedorTarjetas {
     display: flex;
-    justify-content: space-around; /* pone las tarjetas en horizontal y les da el mismo espacio entre todas */
+    justify-content: space-around;
+    /* pone las tarjetas en horizontal y les da el mismo espacio entre todas */
 }
-.pIntro{
+
+.pIntro {
     margin-top: 10px;
 }
 
 footer {
-    height: 100px; /* siempre se le da una altura al footer */
+    height: 100px;
+    /* siempre se le da una altura al footer */
     background-color: black;
     margin: 0;
-    position: relative; /* para lograr que el renglon de copyright quede al final sel sitio */
+    position: relative;
+    /* para lograr que el renglon de copyright quede al final sel sitio */
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.subFooter{
+
+.subFooter {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 20px;
 }
-.iconoFooter{
+
+.iconoFooter {
     color: white;
     font-size: 30px;
     margin: 5px;
 }
 
-.info{
+.info {
     color: white;
     text-align: center;
 }
 
-.infoFooter{
+.infoFooter {
     color: white;
     margin: 20px;
 }
 
 .copyright {
     background-color: grey;
-    position: absolute; /* reacciona a la position del footer, y no al body */
+    position: absolute;
+    /* reacciona a la position del footer, y no al body */
     bottom: 0;
     width: 100%;
     text-align: center;
 }
 
 
-@media(max-width: 768px){
-    .contenedorTarjetas{
+@media(max-width: 768px) {
+    nav {
+        height: 90px;
+    }
+
+    ul {
         display: block;
     }
-    .tarjeta{
+
+    .itemNav {
+        margin: 3px;
+    }
+    .imgDescripcion{
+        display: none;
+    }
+
+    .galeria {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .div3 {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .div4 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .div5 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .div6 {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+
+    .div7 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .div8 {
+        grid-area: 5 / 2 / 6 / 3;
+    }
+
+    .contenedorTarjetas {
+        display: block;
+    }
+
+    .tarjeta {
         margin: 0 auto;
         margin-bottom: 10px;
     }
-    .descripcion{
+
+    .descripcion {
         display: block;
     }
-    .infoDescripcion{
+
+    .infoDescripcion {
         max-width: 100%;
     }
-    .imgDescripcion{
+
+    .imgDescripcion {
         max-width: 100%;
     }
-    .subFooter{
+
+    .subFooter {
         display: block;
     }
+
     .iconos {
         text-align: center;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    footer{
+
+    footer {
         height: 150px;
     }
 }
